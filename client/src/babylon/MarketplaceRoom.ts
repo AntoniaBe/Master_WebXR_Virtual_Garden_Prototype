@@ -50,10 +50,11 @@ class MarketplaceRoom {
     this.gameMenu = new GameMenu(chatRoom, this.camera, this.scene, appData, this.panelChat, this.panelMenu, this.room);
     this.gameMenu.createMenuXR();
     
+    /*
     this.gameMenu.panelMenu.isVisible = false;
     for (let i = 0; i < this.gameMenu.panelMenu.children.length; i++) {
       this.gameMenu.panelMenu.children[i].isVisible = false;
-    }
+    }*/
 
     for (const player of this.players.values()) {
       player.update();
